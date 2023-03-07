@@ -4,11 +4,13 @@ import "./home.css";
 import heroimage from "../assets/12.jpg";
 import Destination from "./Destination";
 import Trip from "./Trip";
-import Footer from "./Footer";
+import Navbar from "./Navbar.jsx"
+import Footer from "./Footer.jsx"
 
 const Home = () => {
   return (
     <div className="home">
+    <Navbar />
       <Hero
         cName="hero"
         heroimg={heroimage}
@@ -20,6 +22,7 @@ const Home = () => {
       />
       <Destination />
       <Trip />
+      <Footer />
     </div>
   );
 };
